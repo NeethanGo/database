@@ -1,5 +1,5 @@
 # database
-Linux下数据库使用，主要关于SQLite基础实践操作。  
+Linux下数据库使用，主要关于SQLite3基础实践操作。  
 
 # 介绍
 以下是一些常见的Linux上使用的数据库以及它们的特性：
