@@ -44,3 +44,6 @@ Oracle Database： Oracle Database是一个强大的商业级关系型数据库�
 支持多种数据类型和数据分区。
 
 这只是一些常见的数据库，Linux上还有许多其他数据库可以满足不同的需求。选择数据库时，需根据项目的需求、性能、可用性、数据模型和开发团队的熟悉程度来权衡不同数据库的特性。  
+
+# Linux环境安装
+sudo apt install sqlite3
