@@ -1,0 +1,30 @@
+-- 创建学生表
+CREATE TABLE IF NOT EXISTS students (
+    student_id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    score REAL
+);
+
+-- 插入学生信息
+INSERT INTO students (name, score) VALUES
+    ('Alice', 95.5),
+    ('Bob', 88.0),
+    ('Charlie', 92.3);
+
+-- 查询所有学生信息
+SELECT * FROM students;
+
+-- 修改学生成绩（假设将学号为1的学生成绩更新为98.5）
+UPDATE students SET score = 98.5 WHERE student_id = 1;
+
+
+要在SQLite3数据库中执行这些SQL语句，你可以使用SQLite3的命令行工具或编程语言的SQLite3库。以下是一个在SQLite3命令行中执行这些操作的示例：
+# 进入SQLite3命令行终端
+sqlite3 students.db
+
+# 执行上述SQL语句（逐行复制粘贴或从文件中导入）
+sqlite> CREATE TABLE IF NOT EXISTS students (...);
+sqlite> INSERT INTO students (name, score) VALUES ('Alice', 95.5), ('Bob', 88.0), ('Charlie', 92.3);
+sqlite> SELECT * FROM students;
+sqlite> UPDATE students SET score = 98.5 WHERE student_id = 1;
+
